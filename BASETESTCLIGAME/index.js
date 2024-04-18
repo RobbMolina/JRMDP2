@@ -43,13 +43,8 @@ async function question1() {
   const answers = await inquirer.prompt({
     name: "question_1",
     type: "list",
-    message: "whats my full name?\n",
-    choices: [
-      "Roberto Molina Duran",
-      "Jose Roberto Molina Duran",
-      "Jose Roberto Molina Milan",
-      "Jose Roberto Molina Duraz ",
-    ],
+    message: "whats my brothers name?\n",
+    choices: ["lexso", "rolando", "leon", "alveiro "],
   });
 
   return handleAnswer(answers.question_1 === "Jose Roberto Molina Duran");
